@@ -26,10 +26,11 @@
         }
 
         public function addLink() {
-            $sql = 'INSERT INTO links(link, shortlink) VALUES(:link, :shortlink)';
+            $sql = 'INSERT INTO links(link, shortlink, user) VALUES(:link, :shortlink, :user)';
             $query = $this->_db->prepare($sql);
+            $user = $_COOKIE['login'];
 
-            $query->execute(['link' => $this->link, 'shortlink' => $this->shortlink]);
+            $query->execute(['link' => $this->link, 'shortlink' => $this->shortlink, 'user' => $user]);
         }
 
         public function getAllUserLinks() {

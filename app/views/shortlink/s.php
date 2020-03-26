@@ -29,14 +29,16 @@
                 <h1>Сокращённые ссылки</h1><br>
             <?endif; ?>
             <?php foreach ($data['links'] as $el): ?>
-                <div class="links-wrap">
-                    <p><b>Длинная:</b> <a href="<?=$el['link']?>"><?=$el['link']?></a></p>
-                    <p><b>Короткая:</b> <a href="#">localhost:8888/<?=$el['shortlink']?></a></p>
-                    <form action="/" method="post">
-                        <input type="hidden" name="delete_item" value="">
-                        <button class="btn">Удалить <i class="fas fa-trash"></i></button>
-                    </form>
-                </div>
+                <?if ($el['user'] == $_COOKIE['login']) : ?>
+                    <div class="links-wrap">
+                        <p><b>Длинная:</b> <a href="<?=$el['link']?>"><?=$el['link']?></a></p>
+                        <p><b>Короткая:</b> <a href="#">localhost:8888/<?=$el['shortlink']?></a></p>
+                        <form action="/" method="post">
+                            <input type="hidden" name="delete_item" value="">
+                            <button class="btn">Удалить <i class="fas fa-trash"></i></button>
+                        </form>
+                    </div>
+                <?endif; ?>
             <?php endforeach; ?>
         </div>
     </div>
