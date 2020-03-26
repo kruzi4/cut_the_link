@@ -8,7 +8,11 @@
             <a href="/">Главная</a>
             <a href="/contact/about">Про нас</a>
             <a href="/contact">Контакты</a>
-            <a href="/user/auth">Войти</a>
+            <?php if ($_COOKIE['login'] == ""): ?>
+                <a href="/user/auth">Войти</a>
+            <?php else: ?>
+                <a href="/user/dashboard">Личный кабинет</a>
+            <?php endif; ?>
         </div>
     </div>
     <div class="container middle">

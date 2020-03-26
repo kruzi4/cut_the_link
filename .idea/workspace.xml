@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abf81026-bb4f-49e9-a71d-c603c9db2c39" name="Default Changelist" comment="" />
+    <list default="true" id="abf81026-bb4f-49e9-a71d-c603c9db2c39" name="Default Changelist" comment="Added Controller and Model for shortlinks">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/S.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/S.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/SModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/SModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shortlink/s.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shortlink/s.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/blocks/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/blocks/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +20,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Zb2Av7hAxLwc0d8VhUhB27kJpN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -20,8 +32,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../20" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -44,20 +57,58 @@
       <workItem from="1585097961646" duration="1802000" />
       <workItem from="1585099779824" duration="784000" />
       <workItem from="1585128924157" duration="2079000" />
+      <workItem from="1585132889032" duration="1801000" />
+      <workItem from="1585136468273" duration="2162000" />
+      <workItem from="1585138798980" duration="1997000" />
+      <workItem from="1585143053307" duration="1837000" />
+      <workItem from="1585144903575" duration="674000" />
+      <workItem from="1585211169776" duration="1771000" />
+      <workItem from="1585212966145" duration="1211000" />
+      <workItem from="1585246665298" duration="705000" />
+      <workItem from="1585257661604" duration="1391000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Controller and Model for shortlinks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Controller and Model for shortlinks" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1585128934973">
+    <state x="584" y="112" key="CommitChangelistDialog2" timestamp="1585144891309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585128934973" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585129640277">
+    <state x="584" y="112" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585144891309" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1585257904070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585129640277" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585257904070" />
+    <state x="795" y="443" key="NewPhpFileDialog" timestamp="1585134175435">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="795" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585134175435" />
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1585257664231">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585257664231" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585213062785">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585213062785" />
   </component>
 </project>

@@ -117,6 +117,26 @@ header > .top-menu > .logo span {
     margin: 20px 0;
 }
 
+.main > .links {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.main > .links > .links-wrap {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #ebeded;
+    margin-bottom: 10px;
+}
+
+.main > .links > .links-wrap > form > .btn {
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 120px;
+    height: 30px;
+}
+
 footer {
     margin-top: 50px;
     display: flex;
