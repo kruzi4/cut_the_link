@@ -47,4 +47,12 @@
             $query->execute();
         }
 
+        public function getLinkFromShortLink($shortlink) {
+            $result = $this->_db->query("SELECT * FROM `links` WHERE `shortlink` = '$shortlink'");
+            $link = $result->fetch(PDO::FETCH_ASSOC);
+
+            return $link;
+        }
+
+
     }

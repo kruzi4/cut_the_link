@@ -32,7 +32,7 @@
                 <?if ($el['user'] == $_COOKIE['login']) : ?>
                     <div class="links-wrap">
                         <p><b>Длинная:</b> <a href="<?=$el['link']?>"><?=$el['link']?></a></p>
-                        <p><b>Короткая:</b> <a href="#">localhost:8888/<?=$el['shortlink']?></a></p>
+                        <p><b>Короткая:</b> <a href="/s/<?=$el['shortlink']?>">localhost:8888/s/<?=$el['shortlink']?></a></p>
                         <form action="/" method="post">
                             <input type="hidden" name="delete_item" value="<?=$el['id']?>">
                             <button class="btn">Удалить <i class="fas fa-trash"></i></button>
