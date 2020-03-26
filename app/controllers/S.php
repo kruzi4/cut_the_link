@@ -17,6 +17,10 @@ class S extends Controller {
                 }
             }
 
+            if($_POST['delete_item']) {
+                $cutter->deleteLink($_POST['delete_item']);
+            }
+
             $data['links'] = $cutter->getAllUserLinks();
 
             $this->view('shortlink/s', $data);

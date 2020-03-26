@@ -40,4 +40,11 @@
             return $link;
         }
 
+        public function deleteLink($id) {
+            $sql = "DELETE FROM `links` WHERE `links`.`id` = $id";
+            $query = $this->_db->prepare($sql);
+
+            $query->execute();
+        }
+
     }
