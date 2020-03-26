@@ -42,8 +42,8 @@
         }
 
         public function getUser() {
-            $email = $_COOKIE['login'];
-            $result = $this->_db->query("SELECT * FROM `users` WHERE `email` = '$email'");
+            $login = $_COOKIE['login'];
+            $result = $this->_db->query("SELECT * FROM `users` WHERE `name` = '$login'");
             return $result->fetch(PDO::FETCH_ASSOC);
         }
 
@@ -62,20 +62,20 @@
             header('Location: /user/auth');
         }
 
-        public function auth($email, $pass) {
-            $result = $this->_db->query("SELECT * FROM `users` WHERE `email` = '$email'");
+        public function auth($login, $pass) {
+            $result = $this->_db->query("SELECT * FROM `users` WHERE `name` = '$login'");
             $user = $result->fetch(PDO::FETCH_ASSOC);
 
-            if($user['email'] == '')
-                return 'Пользователя с таким email не существует';
+            if($user['name'] == '')
+                return 'Пользователя с таким логином не существует';
             else if(password_verify($pass, $user['pass']))
-                $this->setAuth($email);
+                $this->setAuth($login);
             else
                 return 'Пароли не совпадают';
         }
 
-        public function setAuth($email) {
-            setcookie('login', $email, time() + 3600, '/');
+        public function setAuth($login) {
+            setcookie('login', $login, time() + 3600, '/');
             header('Location: /user/dashboard');
         }
 

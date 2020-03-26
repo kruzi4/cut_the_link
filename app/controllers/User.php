@@ -33,9 +33,9 @@
         public function auth() {
 
             $data = [];
-            if(isset($_POST['email'])) {
+            if(isset($_POST['login'])) {
                 $user = $this->model('UserModel');
-                $data['message'] = $user->auth($_POST['email'], $_POST['pass']);
+                $data['message'] = $user->auth($_POST['login'], $_POST['pass']);
             }
 
             $this->view('user/auth', $data);

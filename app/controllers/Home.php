@@ -11,7 +11,7 @@
                     $cutter->setData($_POST['link'], $_POST['shortlink']);
 
                     if ($cutter->isReserved()) {
-                        $data['message'] = "Короткая ссылка уже занята!";
+                        $data['message'] = "Такое сокращение уже используется в базе!";
                     } else {
                         $cutter->addLink();
                     }
