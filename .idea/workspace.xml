@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abf81026-bb4f-49e9-a71d-c603c9db2c39" name="Default Changelist" comment="Added Controller and Model for shortlinks">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/UserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/UserModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/user/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/auth.php" afterDir="false" />
-    </list>
+    <list default="true" id="abf81026-bb4f-49e9-a71d-c603c9db2c39" name="Default Changelist" comment="Added Controller and Model for shortlinks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +62,7 @@
       <workItem from="1585261258010" duration="1796000" />
       <workItem from="1585263065434" duration="1794000" />
       <workItem from="1585264871305" duration="1795000" />
-      <workItem from="1585266678287" duration="294000" />
+      <workItem from="1585266678287" duration="494000" />
     </task>
     <servers />
   </component>
