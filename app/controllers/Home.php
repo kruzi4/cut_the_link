@@ -12,7 +12,7 @@
 
                     if ($cutter->isReserved()) {
                         $data['message'] = "Такое сокращение уже используется в базе!";
-                    } else {
+                    }else{
                         $cutter->addLink();
                     }
                 }

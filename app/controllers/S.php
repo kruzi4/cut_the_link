@@ -6,7 +6,10 @@ class S extends Controller {
 
         $links = $cutter->getLinkFromShortLink($params);
         $url = $links['link'];
-        header("Location: https://$url");
+        if($cutter->is_url($url))
+            header("Location: $url");
+        else
+            header("Location: https://$url");
     }
 
 

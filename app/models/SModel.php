@@ -54,5 +54,18 @@
             return $link;
         }
 
+        public function is_url($in){
+            $w = "a-z0-9";
+            $url_pattern = "#( 
+            (?:f|ht)tps?://(?:www.)? 
+            (?:[$w\\-.]+/?\\.[a-z]{2,4})/? 
+            (?:[$w\\-./\\#]+)? 
+            (?:\\?[$w\\-&=;\\#]+)? 
+            )#xi";
+
+            $a = preg_match($url_pattern,$in);
+            return $a;
+        }
+
 
     }
