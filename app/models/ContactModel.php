@@ -1,4 +1,8 @@
 <?php
+    //Import the PHPMailer class into the global namespace
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+
     class ContactModel {
         private $name;
         private $email;
@@ -25,18 +29,27 @@
                 return "Верно";
         }
 
-         public function mail() {
-            $to = "admin@itproger.com";
-            $message = "Имя: " . $this->name . ". Возраст: " . $this->age . ". Сообщение: " . $this->message;
+         public function sendmail() {
+             date_default_timezone_set('Etc/UTC');
+             require 'vendor/autoload.php';
+             $mail = new PHPMailer;
+             $mail->isSMTP();
+             $mail->SMTPDebug = SMTP::DEBUG_OFF;
+             $mail->Host = 'smtp.sendgrid.net';
+             $mail->Port = 25;
+             $mail->SMTPAuth = true;
+             $mail->Username = 'apikey';
+             $mail->Password = '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';
+             $mail->setFrom('info@sokratim.com', "=?utf-8?B?".base64_encode("Обратная свзязь с Сокра.тим")."?=");
+             $mail->addAddress('kostyadestroy@gmail.com', 'Kostya');
+             $mail->Subject = "=?utf-8?B?".base64_encode("Форма обратной связи с Сокра.тим")."?=";
+             $message = "Имя: " . $this->name . ". Возраст: " . $this->age . ". Сообщение: " . $this->message;
+             $mail->Body = $message;
+             $mail->AltBody = $message;
 
-            $subject = "=?utf-8?B?".base64_encode("Сообщение с нашего сайта")."?=";
-            $headers = "From: $this->email\r\nReply-to: $this->email\r\nContent-type: text/html; charset=utf-8\r\n";
-            $success = mail($to, $subject, $message, $headers);
-
-            if(!$success)
-                return "Сообщение было не отправлено";
-            else
-                return true;
+             if (!$mail->send()) {
+                 echo 'Mailer Error: ' . $mail->ErrorInfo;
+             }
          }
 
     }

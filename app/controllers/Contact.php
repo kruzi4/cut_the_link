@@ -9,7 +9,7 @@
 
                 $isValid = $mail->validForm();
                 if($isValid == "Верно")
-                    $data['message'] = $mail->mail();
+                    $data['message'] = $mail->sendmail();
                 else
                     $data['message'] = $isValid;
             }
